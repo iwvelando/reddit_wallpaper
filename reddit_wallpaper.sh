@@ -1,6 +1,6 @@
 #!/bin/bash
 
-# This script iterates through a preset list of subreddits and uses their imgur rss feeds to extract images from them and arrange them into a grid with imagemagick; the resulting wallpaper can be combined with a slideshow wallpaper style to get a dynamic desktop background. Credit for the idea goes to /u/Emwat1024.
+# This script iterates through a preset list of subreddits and uses their imgur rss feeds to extract images from them and arrange them into a grid with imagemagick; the resulting wallpaper can be combined with a slideshow wallpaper style to get a dynamic desktop background. Credit for the original idea goes to /u/Emwat1024. The default wallpaper is available free from http://www.heikotischler.com/?project=wallpaper
 
 # Set your preferred subreddits; scratchdir is a scratch directory for downloading and manipulating images while walldir is where the finished image will be stored and updated periodically
 declare -a subreddits=(earthporn wallpaper wallpapers diy itookapicture spaceporn photographs unixporn)
