@@ -26,5 +26,4 @@ Now you can simply execute reddit_wallpaper/reddit_wallpaper.sh either from a te
 - Line 6: List of subreddits the wallpapers will be created from
 - Line 10: (Optionally) set the background image for the wallpapers if there is any empty space leftover after the images have been combined
 - Line 11: Refresh interval in seconds; this is how frequently you query imgur for these subreddits and update the wallpapers
-- Line 52: You can use this line instead of line 53 to ignore the aspect ratio during resize and fill every slot in the grid
-- Line 56: You can use this line instead of line 57 to use either a transparent background or a solid color background
+- Line 52: You can use this line instead of line 53 to use either a transparent background or a solid color background and to force-stretch each image to fit flush in the grid
