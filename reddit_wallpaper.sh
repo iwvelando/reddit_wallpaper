@@ -3,7 +3,7 @@
 # This script iterates through a preset list of subreddits and uses their imgur rss feeds to extract images from them and arrange them into a grid with imagemagick; the resulting wallpaper can be combined with a slideshow wallpaper style to get a dynamic desktop background. Credit for the original idea goes to /u/Emwat1024. The default wallpaper is available free from http://www.heikotischler.com/?project=wallpaper
 
 # Set your preferred subreddits; scratchdir is a scratch directory for downloading and manipulating images while walldir is where the finished image will be stored and updated periodically
-declare -a subreddits=(earthporn wallpaper wallpapers diy itookapicture spaceporn photographs unixporn)
+declare -a subreddits=(earthporn wallpaper wallpapers diy itookapicture spaceporn photographs unixporn historyporn)
 scratchdir=$( mktemp -d --suffix=_reddit_wallpaper ) # Make a unique scratch directory in /tmp
 walldir=/media/data/reddit_wallpaper_$USER
 scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) # Should be the location of this script
@@ -41,7 +41,7 @@ do
 		done
 
 		# For the image grid, choose the grid layout such that it's as square as possible with the horizontal dimension never being larger than the vertical
-		hPar=$( echo "sqrt($suffix)" | bc) # This comes out to be floor(sqrt(suffix))
+		hPar=$( echo "sqrt($suffix)" | bc ) # This comes out to be floor(sqrt(suffix))
 		vPar=$( echo "($suffix+$hPar-1)/$hPar" | bc ) # This is just ceil(suffix/hPar)
 
 		# Compute the appropriate dimensions of each image in the grid
