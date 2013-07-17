@@ -5,7 +5,7 @@
 # Set your preferred subreddits; scratchdir is a scratch directory for downloading and manipulating images while walldir is where the finished image will be stored and updated periodically
 declare -a subreddits=(earthporn wallpaper wallpapers diy itookapicture spaceporn photographs unixporn historyporn)
 scratchdir=$( mktemp -d --suffix=_reddit_wallpaper ) # Make a unique scratch directory in /tmp
-walldir=/media/data/reddit_wallpaper_$USER
+walldir=$HOME/reddit_wallpaper_$USER
 scriptdir=$( cd "$( dirname "${BASH_SOURCE[0]}" )" && pwd ) # Should be the location of this script
 background=$scriptdir/background/background1.jpg
 update=3600 # Update interval in seconds; default is to update the wallpaper for each subreddit every hour

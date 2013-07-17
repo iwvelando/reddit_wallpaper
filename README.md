@@ -14,7 +14,7 @@ Clone:
 
 You'll need to edit reddit_wallpaper/reddit_wallpaper.sh to suit your own system:
 
-(Likely) required changes:
+(Possibly) required changes:
 - Line 8: Change walldir to the directory where you want the finished wallpapers to be moved to
 - Line 7: If you're not allowed to or don't want to write to /tmp you'll also need to change scratchdir; this is where images will be pulled, manipulated, and combined before being moved to walldir.
 - Lines 17,18: Specify the desired wallpaper resolution which is probably your monitor resolution.
